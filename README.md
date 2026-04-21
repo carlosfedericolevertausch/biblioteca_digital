@@ -75,6 +75,7 @@ ADD CONSTRAINT fk_prestamos_usuario
 FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
 ADD CONSTRAINT fk_prestamos_libro
 FOREIGN KEY (id_libro) REFERENCES libros(id_libro);
+```
 
 ### Datos: Insertar datos para las pruebas 
 ```sql
