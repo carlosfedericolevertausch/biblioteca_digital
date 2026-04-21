@@ -18,7 +18,9 @@ INSERT INTO categorias (id_categoria, nombre_categoria) VALUES
 (3, 'Historia'),
 (4, 'Tecnología'),
 (5, 'Educación');
-Tabla: libros
+```
+### Tabla: libros
+```sql
 DROP TABLE IF EXISTS libros;
 
 CREATE TABLE IF NOT EXISTS libros (
@@ -38,7 +40,9 @@ INSERT INTO libros VALUES
 (3, 'Breve Historia del Tiempo', 'Stephen Hawking', 3, '1988-04-01', 100003),
 (4, 'Fundamentos de Bases de Datos', 'Elmasri y Navathe', 4, '2016-01-15', 100004),
 (5, 'Aprendiendo SQL', 'Alan Beaulieu', 5, '2020-03-10', 100005);
-Tabla: prestamos
+```
+### Tabla: prestamos
+```sql
 DROP TABLE IF EXISTS prestamos;
 
 CREATE TABLE IF NOT EXISTS prestamos (
@@ -60,7 +64,9 @@ INSERT INTO prestamos VALUES
 (5, 5, 5, '2026-04-06', NULL),
 (6, 1, 3, '2026-04-07', '0000-00-00'),
 (7, 2, 1, '2026-04-08', NULL);
-Tabla: usuarios
+```
+### Tabla: usuarios
+```sql
 DROP TABLE IF EXISTS usuarios;
 
 CREATE TABLE IF NOT EXISTS usuarios (
@@ -77,7 +83,9 @@ INSERT INTO usuarios VALUES
 (3, 'María Torres', 'maria.torres@correo.com', '2026-04-21 14:47:32'),
 (4, 'Carlos Rojas', 'carlos.rojas@correo.com', '2026-04-21 14:47:32'),
 (5, 'Sofía Muñoz', 'sofia.munoz@correo.com', '2026-04-21 14:47:32');
-Restricciones de Integridad Referencial
+```
+### Restricciones de Integridad Referencial
+```sql
 ALTER TABLE libros
 ADD CONSTRAINT fk_libros_categoria
 FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria);
